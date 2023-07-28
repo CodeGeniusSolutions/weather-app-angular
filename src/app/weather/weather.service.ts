@@ -2,14 +2,13 @@ import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { Observable, map } from 'rxjs'
 
-import { CoordinatesByLocationInterface, CurrentWeatherInterface } from '../domain/weather/types'
-import { EnvironmentService } from './environments.service'
-import { WeatherRepository } from '../application/weather/weather'
+import { CoordinatesByLocationInterface, CurrentWeatherInterface } from './types/weather.interface'
+import { EnvironmentService } from '../environments.service'
 
 @Injectable({
   providedIn: 'root',
 })
-export class WeatherService implements WeatherRepository {
+export class WeatherService {
   private geo?: CoordinatesByLocationInterface
 
   constructor(

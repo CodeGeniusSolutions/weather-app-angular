@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterModule, Routes } from '@angular/router'
 
-import { WeatherComponent } from 'src/app/weather/infrastructure/view/weather/weather.component'
+import { WeatherComponent } from 'src/app/weather/components/weather.component'
 import { WeatherService } from './weather.service'
-import { EnvironmentService } from './environments.service'
+import { EnvironmentService } from '../environments.service'
 
 const routes: Routes = [
   {
