@@ -1,1 +1,3 @@
-<p>weather works!</p>
+<ng-container *ngIf="currentWeather$ | async as weatherData">
+  <h1>{{ weatherData.name }}</h1>
+</ng-container>

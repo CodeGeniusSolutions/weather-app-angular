@@ -1,17 +1,4 @@
-type CityName = string
-type CountryCode = string
-
-// http://api.openweathermap.org/geo/1.0/direct?q=Bishkek&appid=e53f7364333f34eb2a77e15dfd685832
-
-export interface CoordinatesByLocationInterface {
-  name: CityName
-  local_names: Record<CountryCode, CityName>
-  lat: number
-  lon: number
-  country: CountryCode
-}
-
-// https://api.openweathermap.org/data/2.5/weather?lat=42.8765615&lon=74.6070079&appid=e53f7364333f34eb2a77e15dfd685832&units=metric
+// https://api.openweathermap.org/data/2.5/weather?q=Bishkek&appid=e53f7364333f34eb2a77e15dfd685832&units=metric
 
 export interface Coord {
   lon: number
