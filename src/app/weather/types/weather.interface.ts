@@ -40,7 +40,7 @@ export interface Sys {
 export type Rain = Record<string, number>
 export type Clouds = Record<string, number>
 
-export interface WeatherResponseInterface {
+export interface CurrentWeatherInterface {
   coord: Coord
   weather: WeatherInfo[]
   base: string

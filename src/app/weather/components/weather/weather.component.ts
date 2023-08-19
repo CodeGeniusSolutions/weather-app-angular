@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { Observable } from 'rxjs'
 
 import { WeatherService } from 'src/app/weather/services/weather.service'
-import { CurrentWeather } from 'src/app/weather/types/weather'
+import { CurrentWeatherInterface } from 'src/app/weather/types/weather.interface'
 
 @Component({
   selector: 'app-weather',
@@ -10,7 +10,7 @@ import { CurrentWeather } from 'src/app/weather/types/weather'
   styleUrls: ['./weather.component.scss'],
 })
 export class WeatherComponent implements OnInit {
-  currentWeather$?: Observable<CurrentWeather>
+  currentWeather$?: Observable<CurrentWeatherInterface>
 
   constructor(private weatherService: WeatherService) {}
 
