@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { Observable } from 'rxjs'
 
-import { WeatherResponseInterface } from 'src/app/weather/types/weatherResponse.interface'
+import { WeatherResponseInterface } from 'src/app/weather/infrastucture/types/weatherResponse.interface'
 import { EnvironmentService } from 'src/app/environments.service'
 
 @Injectable({
