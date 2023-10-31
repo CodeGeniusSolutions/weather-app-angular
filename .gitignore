@@ -1,42 +1,55 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
+node_modules
+/.idea
+/.fleet
+/.vscode
+dist
+/build
 /coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
+./test
 .DS_Store
-Thumbs.db
+tmp
+*.log
+jest.debug.config.js
+.tool-versions
+/.nx-cache
+/.nx
+/.verdaccio/build/local-registry
+/graph/client/src/assets/environment.js
+/graph/client/src/assets/dev/environment.js
+/graph/client/src/assets/generated-project-graphs
+/graph/client/src/assets/generated-task-graphs
+/graph/client/src/assets/generated-task-inputs
+/nx-dev/nx-dev/public/documentation
+/nx-dev/nx-dev/public/images/open-graph
+
+# Issues scraper creates these files, stored by github's cache
+/scripts/issues-scraper/cached
+
+# We don't commit a CHANELGELOG.md file to the repo, we only create Github releases
+CHANGELOG.md
+
+# Next.js
+.next
+
+# Angular Cache
+.angular
+
+# Local dev files
+.env
+.bashrc
+.nx
+
+*.node
+
+# Fix for issue when working on the repo in a dev container
+.pnpm-store
+.nx/cache
+
+.cargo/.package-cache
+.cargo/bin/
+.cargo/env
+.cargo/registry/
+.local/
+.npm/
+.profile
+.rustup/
