@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "name": "4_weather-widget",
+  "name": "weather-app",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -13,7 +13,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "options": {
-        "outputPath": "dist/4_weather-widget",
+        "outputPath": "dist/weather-app",
         "index": "src/index.html",
         "main": "src/main.ts",
         "polyfills": [
